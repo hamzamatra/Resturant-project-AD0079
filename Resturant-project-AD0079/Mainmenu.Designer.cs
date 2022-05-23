@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 485);
+            this.ClientSize = new System.Drawing.Size(1029, 553);
             this.Name = "Mainmenu";
             this.Text = "Mainmenu";
             this.ResumeLayout(false);

@@ -34,10 +34,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnOrder = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
             this.btnmenu = new System.Windows.Forms.Button();
             this.btnclear = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnupdate = new System.Windows.Forms.Button();
+            this.btnopinion = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -50,9 +52,10 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1794, 119);
+            this.panel1.Size = new System.Drawing.Size(1757, 119);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -75,6 +78,7 @@
             this.label1.Size = new System.Drawing.Size(219, 48);
             this.label1.TabIndex = 2;
             this.label1.Text = "Welcome , ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -89,19 +93,44 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.Controls.Add(this.btnopinion);
+            this.panel2.Controls.Add(this.btnOrder);
             this.panel2.Controls.Add(this.btnupdate);
             this.panel2.Controls.Add(this.btnmenu);
             this.panel2.Controls.Add(this.btnclear);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.ForeColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(0, 119);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(474, 692);
             this.panel2.TabIndex = 1;
             // 
+            // btnOrder
+            // 
+            this.btnOrder.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.Location = new System.Drawing.Point(35, 57);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(322, 69);
+            this.btnOrder.TabIndex = 5;
+            this.btnOrder.Text = "Order";
+            this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.Location = new System.Drawing.Point(35, 281);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(322, 69);
+            this.btnupdate.TabIndex = 4;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
             // btnmenu
             // 
             this.btnmenu.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmenu.Location = new System.Drawing.Point(52, 41);
+            this.btnmenu.Location = new System.Drawing.Point(35, 170);
             this.btnmenu.Name = "btnmenu";
             this.btnmenu.Size = new System.Drawing.Size(322, 69);
             this.btnmenu.TabIndex = 3;
@@ -112,7 +141,7 @@
             // btnclear
             // 
             this.btnclear.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclear.Location = new System.Drawing.Point(52, 312);
+            this.btnclear.Location = new System.Drawing.Point(35, 407);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(322, 69);
             this.btnclear.TabIndex = 2;
@@ -122,32 +151,34 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(474, 119);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1320, 692);
+            this.panel3.Size = new System.Drawing.Size(1283, 692);
             this.panel3.TabIndex = 2;
             // 
-            // btnupdate
+            // btnopinion
             // 
-            this.btnupdate.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.Location = new System.Drawing.Point(52, 187);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(322, 69);
-            this.btnupdate.TabIndex = 4;
-            this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = true;
-            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            this.btnopinion.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnopinion.Location = new System.Drawing.Point(35, 525);
+            this.btnopinion.Name = "btnopinion";
+            this.btnopinion.Size = new System.Drawing.Size(322, 69);
+            this.btnopinion.TabIndex = 6;
+            this.btnopinion.Text = "Opinion";
+            this.btnopinion.UseVisualStyleBackColor = true;
+            this.btnopinion.Click += new System.EventHandler(this.btnopinion_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1794, 811);
+            this.ClientSize = new System.Drawing.Size(1757, 811);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.Name = "Menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
@@ -170,5 +201,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnmenu;
         private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.Button btnopinion;
     }
 }

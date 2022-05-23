@@ -10,21 +10,22 @@ using System.Windows.Forms;
 
 namespace Resturant_project_AD0079
 {
-    public partial class Clear : Form
+    public partial class opinion : Form
     {
-        public Clear()
+        public opinion()
         {
             InitializeComponent();
         }
 
-        private void btnclearfood_Click(object sender, EventArgs e)
+        private void btnaddopinion_Click(object sender, EventArgs e)
         {
-            lstmenu.Items.RemoveAt(lstmenu.SelectedIndex);
+              lblopinion.Text = txtopinion.Text;
         }
 
-        private void btncleardrinks_Click(object sender, EventArgs e)
+        private void btnclearopinion_Click(object sender, EventArgs e)
         {
-            lstDrinks.Items.RemoveAt(lstDrinks.SelectedIndex);
+            txtopinion.Text = "";
+            lblopinion.Text = "";
         }
     }
 }

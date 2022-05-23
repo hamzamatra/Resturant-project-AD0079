@@ -10,36 +10,36 @@ using System.Windows.Forms;
 
 namespace Resturant_project_AD0079
 {
-    public partial class Update : Form
+    public partial class Order : Form
     {
-        public Update()
+        public Order()
         {
             InitializeComponent();
         }
 
-        private void Update_Load(object sender, EventArgs e)
+        private void Order_Load(object sender, EventArgs e)
         {
-
+            this.BackColor = Color.White;
         }
 
-        private void btnaddfood_Click(object sender, EventArgs e)
+        private void btnchoosefood_Click(object sender, EventArgs e)
         {
-            lstmenu.Items.Add(txtaddfood.Text);
+            txtchoosemenu.Text = lstmenu.SelectedItem.ToString();   
         }
 
-        private void btnadddrinks_Click(object sender, EventArgs e)
+        private void btnDrinks_Click(object sender, EventArgs e)
         {
-            lstDrinks.Items.Add(txtadddrinks.Text);
+            txtDrinks.Text = lstDrinks.SelectedItem.ToString();
         }
 
         private void btnx_Click(object sender, EventArgs e)
         {
-            txtaddfood.Text = "";
+            txtchoosemenu.Text = null;
         }
 
         private void btnx2_Click(object sender, EventArgs e)
         {
-            txtadddrinks.Text = "";
+            txtDrinks.Text = null;
         }
     }
 }
