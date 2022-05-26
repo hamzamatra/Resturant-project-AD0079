@@ -96,6 +96,7 @@
     <Compile Include="Update.Designer.cs">
       <DependentUpon>Update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Updatfood.cs" />
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Apdate.resx">
       <DependentUpon>Apdate.cs</DependentUpon>

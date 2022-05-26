@@ -34,12 +34,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnopinion = new System.Windows.Forms.Button();
             this.btnOrder = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
-            this.btnmenu = new System.Windows.Forms.Button();
             this.btnclear = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnopinion = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -55,7 +54,7 @@
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1757, 119);
+            this.panel1.Size = new System.Drawing.Size(1817, 119);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -96,7 +95,6 @@
             this.panel2.Controls.Add(this.btnopinion);
             this.panel2.Controls.Add(this.btnOrder);
             this.panel2.Controls.Add(this.btnupdate);
-            this.panel2.Controls.Add(this.btnmenu);
             this.panel2.Controls.Add(this.btnclear);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.ForeColor = System.Drawing.Color.Black;
@@ -104,6 +102,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(474, 692);
             this.panel2.TabIndex = 1;
+            // 
+            // btnopinion
+            // 
+            this.btnopinion.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnopinion.Location = new System.Drawing.Point(35, 475);
+            this.btnopinion.Name = "btnopinion";
+            this.btnopinion.Size = new System.Drawing.Size(322, 69);
+            this.btnopinion.TabIndex = 6;
+            this.btnopinion.Text = "Opinion";
+            this.btnopinion.UseVisualStyleBackColor = true;
+            this.btnopinion.Click += new System.EventHandler(this.btnopinion_Click);
             // 
             // btnOrder
             // 
@@ -119,7 +128,7 @@
             // btnupdate
             // 
             this.btnupdate.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.Location = new System.Drawing.Point(35, 281);
+            this.btnupdate.Location = new System.Drawing.Point(35, 200);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(322, 69);
             this.btnupdate.TabIndex = 4;
@@ -127,21 +136,10 @@
             this.btnupdate.UseVisualStyleBackColor = true;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
-            // btnmenu
-            // 
-            this.btnmenu.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmenu.Location = new System.Drawing.Point(35, 170);
-            this.btnmenu.Name = "btnmenu";
-            this.btnmenu.Size = new System.Drawing.Size(322, 69);
-            this.btnmenu.TabIndex = 3;
-            this.btnmenu.Text = "Menu";
-            this.btnmenu.UseVisualStyleBackColor = true;
-            this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
-            // 
             // btnclear
             // 
             this.btnclear.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclear.Location = new System.Drawing.Point(35, 407);
+            this.btnclear.Location = new System.Drawing.Point(35, 342);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(322, 69);
             this.btnclear.TabIndex = 2;
@@ -156,25 +154,14 @@
             this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(474, 119);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1283, 692);
+            this.panel3.Size = new System.Drawing.Size(1343, 692);
             this.panel3.TabIndex = 2;
-            // 
-            // btnopinion
-            // 
-            this.btnopinion.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnopinion.Location = new System.Drawing.Point(35, 525);
-            this.btnopinion.Name = "btnopinion";
-            this.btnopinion.Size = new System.Drawing.Size(322, 69);
-            this.btnopinion.TabIndex = 6;
-            this.btnopinion.Text = "Opinion";
-            this.btnopinion.UseVisualStyleBackColor = true;
-            this.btnopinion.Click += new System.EventHandler(this.btnopinion_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1757, 811);
+            this.ClientSize = new System.Drawing.Size(1817, 811);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -199,7 +186,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblshowname;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnmenu;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnOrder;
         private System.Windows.Forms.Button btnopinion;
